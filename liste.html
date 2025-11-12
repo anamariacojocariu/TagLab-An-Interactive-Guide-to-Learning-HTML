@@ -1,0 +1,125 @@
+<html>
+<body>
+
+    <head>
+        <meta name="description" content="Liste" />
+        <title>Liste</title>
+        <link rel="stylesheet" type="text/css" href="cssfile.css" />
+
+        <style>
+            li {
+                color: black;
+            }
+
+            .list-style {
+                list-style-image: url("game.png");
+                list-style-position: outside;
+            }
+
+            .list-style-type-sq {
+                list-style-type: square;
+            }
+
+            .list-style-type-ci {
+                list-style-type: circle;
+            }
+
+            .list-style-type-lower-greek {
+                list-style-type: lower-greek;
+            }
+            ol{
+                margin:2;
+                padding:50px;
+            }
+
+            td {
+                border: 1px solid white;
+                text-align: left;
+            }
+          
+        </style>
+
+    </head>
+
+    <h2>Definirea stilurilor pentru liste</h2>
+
+    <p>Pentru a defini stilurile pentru liste în CSS, putem modifica diverse proprietati care afecteaza atat listele ordonate (ol) cat si listele neordonate (ul). Iata cateva exemple de cum putem stiliza listele:</p>
+    <br />
+    <p>Pentru inceput, vom construi o lista ordonata, nestilizata, pentru a putea observa diferentele ulterior:</p>
+
+    <table>
+        <td>
+            <ol>
+                <li>Primul element</li>
+                <li>Al doilea element</li>
+                <li>Al treilea element</li>
+                <li>Al patrulea element</li>
+                <li>Al cincilea element</li>
+            </ol>
+        </td>
+    </table>
+
+    <p>Pentru primul exemplu de stilizare se va utiliza proprietatea: list-style. Aceasta seteaza toate proprietatile pentru o lista.</p>
+
+    <table>
+        <td>
+            <ol class="list-style">
+                <li>Primul element</li>
+                <li>Al doilea element</li>
+                <li>Al treilea element</li>
+                <li>Al patrulea element</li>
+                <li>Al cincilea element</li>
+            </ol>
+        </td>
+    </table>
+
+    <p>Pentru al doilea exemplu de stilizare se va utiliza proprietatea: list-style-type. Aceasta indica tipul de marcator folosit pentru elementele din lista.</p>
+
+    <p>Square:</p>
+    <table>
+        <td>
+            <ol class="list-style-type-sq">
+                <li>Primul element</li>
+                <li>Al doilea element</li>
+                <li>Al treilea element</li>
+                <li>Al patrulea element</li>
+                <li>Al cincilea element</li>
+            </ol>
+        </td>
+    </table>
+
+    <p>Circle:</p>
+    <table>
+        <td>
+            <ol class="list-style-type-ci">
+                <li>Primul element</li>
+                <li>Al doilea element</li>
+                <li>Al treilea element</li>
+                <li>Al patrulea element</li>
+                <li>Al cincilea element</li>
+            </ol>
+        </td>
+    </table>
+
+    <p>Lower greek letters:</p>
+    <table>
+        <td>
+            <ol class="list-style-type-lower-greek">
+                <li>Primul element</li>
+                <li>Al doilea element</li>
+                <li>Al treilea element</li>
+                <li>Al patrulea element</li>
+                <li>Al cincilea element</li>
+            </ol>
+        </td>
+    </table>
+
+    <p>etc.</p>
+
+    <!--Footer-->
+    <br /><br /><br /><br />
+    <footer>
+        <p>Footer: 2024 Site recapitulare. Cojocariu Ana-Maria_1305A ©</p>
+    </footer>
+</body>
+</html>

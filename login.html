@@ -1,0 +1,110 @@
+<html>
+<body>
+    <head>
+        <!-- Metadate despre pagina, descriere pentru motoarele de cautare -->
+        <meta name="description" content="Login" />
+        <!-- Titlul paginii, afisat in tab-ul browserului -->
+        <title>Login</title>
+        <!-- Legatura catre fisierul CSS pentru stilizare -->
+        <link rel="stylesheet" type="text/css" href="cssfile.css" />
+        <!-- Stiluri inline pentru paginile HTML -->
+        <style type="text/css">
+            /* Stiluri pentru body */
+            body {
+                display: flex; /* Flexbox pentru centrare orizontala si verticala */
+                justify-content: center; /* Centreaza continutul pe orizontala */
+                align-items: center; /* Centreaza continutul pe verticala */
+                height: 100vh; /* Inaltimea body-ului este 100% din inaltimea vizualizarii */
+                margin: 0; /* Indeparteaza marginile default */
+                background-image: url("BackgroundLogin.jpg"); /* Imagine de fundal */
+            }
+
+            /* Stiluri pentru formular */
+            form {
+                display: flex; /* Flexbox pentru aranjarea elementelor in coloana */
+                flex-direction: column; /* Elemente aranjate pe verticala */
+                border-radius: 10px; /* Colturi rotunjite */
+                background-color: #5a7e8a; /* Culoarea de fundal a formularului */
+                padding: 20px; /* Spatiu interior */
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Umbra pentru adancime */
+                width: 100%; /* Latimea formularului este 100% din containerul parinte */
+                max-width: 300px; /* Latimea maxima a formularului */
+            }
+
+            /* Stiluri pentru tabel */
+            table {
+                width: 100%; /* Latimea tabelului este 100% din containerul parinte */
+                height: 100; /* Inaltimea tabelului (ar trebui unitate, ex: px) */
+            }
+
+            /* Stiluri pentru celulele tabelului */
+            td {
+                padding: 150px; /* Spatiu interior */
+                text-align: left; /* Aliniere text la stanga */
+                vertical-align: middle; /* Aliniere verticala la mijloc */
+                /* border: 1px solid #ccc; Bordura comentata */
+            }
+
+            /* Stiluri pentru butoane */
+            .btn {
+                width: 100%; /* Latimea butoanelor este 100% din containerul parinte */
+            }
+
+            /* Stiluri pentru heading-ul h2 */
+            h2 {
+                align-self: center; /* Centreaza heading-ul in containerul parinte */
+            }
+
+            /* Stiluri pentru paragrafe */
+            p {
+                align-self: center; /* Centreaza paragraful in containerul parinte */
+                color: deepskyblue; /* Culoarea textului */
+                text-decoration-color: deepskyblue; /* Culoarea decoratiunilor textului */
+            }
+
+            /* Stiluri pentru linkuri la hover */
+            a:hover {
+                text-decoration-color: blue; /* Schimba culoarea decoratiunilor textului la hover */
+            }
+        </style>
+    </head>
+
+    <br><br><br />
+    <!-- Tabel pentru incadrare in pagina, fara div -->
+    <table>
+        <tr>
+            <!-- Celule goale pentru spatiu -->
+            <td></td>
+            <td>
+                <!-- Formular de autentificare -->
+                <form action="form_action.asp" method="post" enctype="multipart/form-data">
+                    <!-- Heading pentru formular -->
+                    <h2>Sign in to your account:</h2>
+
+                    <!-- Link catre instructiuni pentru numele de utilizator -->
+                    <a href="https://sso.tuiasi.ro/auth/#userAccountInfo_ro">
+                        >>>Click here to find out how to form the user name and
+                        password of the TUIASI institutional user account<<<
+                    </a>
+                    <!-- Camp de input pentru nume de utilizator sau email -->
+                    Username or email: <input type="text" name="nume" value=""><br>
+                    <!-- Camp de input pentru parola -->
+                    Password: <input type="password" name="parola" value="">
+
+                    <!-- Link pentru resetarea parolei -->
+                    <br />
+                    <a href="recap7.html" align="right">
+                        Forgot Password?
+                    </a>
+                    <br />
+
+                    <!-- Butoane pentru login si sign up -->
+                    <button class="btn">LOGIN</button>
+                    <button class="btn">SIGN UP</button>
+                </form>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

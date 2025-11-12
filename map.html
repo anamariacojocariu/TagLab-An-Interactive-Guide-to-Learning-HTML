@@ -1,0 +1,92 @@
+<html>
+<body>
+
+    <head>
+        <!-- Metadate si titlu -->
+        <meta name="description" content="Harta unei imagini" />
+        <title>Harta unei imagini</title>
+        <!-- Legatura catre fisierul CSS pentru stilizare -->
+        <link rel="stylesheet" type="text/css" href="cssfile.css" />
+    <style>
+        p{
+            color:black;
+        }
+        h2{
+            color:black;
+        }
+    </style>
+    
+    </head>
+
+    <h2>Definirea hartii unei imagini</h2>
+    <br>
+
+    <p>
+        In imaginea de mai jos sunt prezentate mai multe fructe. Muta cursorul deasupra
+        imaginii pentru a observa caror fructe le-a fost atasat un link. (Se utilizeaza functia 'map' - Defineste harta unei imagini.)
+    </p><br /><br />
+
+    <!-- Definirea hartii unei imagini -->
+    <map name="harta">
+        <!-- Zona de click pentru caise -->
+        <area href="https://ro.wikipedia.org/wiki/Cais" alt="Caise"
+              shape="circle" coords="212, 253, 86" />
+        <acronym title="Caise"></acronym>
+
+        <!-- Zona de click pentru caise2 -->
+        <area href="https://ro.wikipedia.org/wiki/Cais" alt="Caise2"
+              shape="circle" coords="365,386,97" />
+        <acronym title="Caise"></acronym>
+
+        <!-- Zona de click pentru capsuna -->
+        <area href="https://ro.wikipedia.org/wiki/Fragaria" alt="Capsuna"
+              shape="poly" coords="112, 339, 175, 348, 243,353, 247, 388, 214, 433, 190, 442, 170, 466, 127, 472, 98, 460, 82, 432" />
+        <acronym title="Capsuna"></acronym>
+
+        <!-- Zona de click pentru capsuna2 -->
+        <area href="https://ro.wikipedia.org/wiki/Fragaria" alt="Capsuna2"
+              shape="rect" coords="292,4,474,161" />
+        <acronym title="Capsuna"></acronym>
+
+        <!-- Zona de click pentru struguri -->
+        <area href="https://ro.wikipedia.org/wiki/Strugure" alt="Struguri"
+              shape="poly" coords="181,537,169,508,174,470, 200,444,241,438,274,451,303,476, 316,472,356,490, 409, 482,454,453, 476,406, 470, 351, 448, 315, 449, 293, 480, 288, 494, 269, 489, 241, 471, 206, 493, 189, 521, 187, 549, 194, 550, 760, 226, 761, 237, 724, 227, 694, 205, 666, 189, 636, 198, 617, 214, 590, 214, 569, 193, 549, 171, 512, 171, 480" />
+        <acronym title="Struguri"></acronym>
+
+        <!-- Zona de click pentru cirese -->
+        <area href="https://ro.wikipedia.org/wiki/Cires" alt="Cirese"
+              shape="poly" coords="90, 54, 136, 46, 166, 55, 178, 82, 172, 121, 156, 146, 134, 167, 94, 162, 76, 130, 65, 100, 71, 76" />
+        <acronym title="Cirese"></acronym>
+
+        <!-- Zona de click pentru afine -->
+        <area href="https://ro.wikipedia.org/wiki/Afin" alt="Afine"
+              shape="circle" coords="66,493,45" />
+        <acronym title="Afine"></acronym>
+
+        <!-- Zona de click pentru afine2 -->
+        <area href="https://ro.wikipedia.org/wiki/Afin" alt="Afine2"
+              shape="circle" coords="164,587,39" />
+        <acronym title="Afine"></acronym>
+
+        <!-- Zona de click pentru afine3 -->
+        <area href="https://ro.wikipedia.org/wiki/Afin" alt="Afine3"
+              shape="circle" coords="82,297,38" />
+        <acronym title="Afine"></acronym>
+
+        <!-- Zona de click pentru zmeura -->
+        <area href="https://ro.wikipedia.org/wiki/Zmeur" alt="Zmeura"
+              shape="poly" coords="100,672,123,659,140,639,170,645,205,665,225,698,235,733,214,753,180,757,135,746,105,728,93,697,104,670" />
+        <acronym title="Zmeura"></acronym>
+    </map>
+
+    <!-- Imaginea utilizand harta definita mai sus -->
+    <img src="Fructe22.png" alt="Fructe" usemap="#harta">
+
+    <!-- Footer-ul paginii -->
+    <br /><br /><br /><br />
+    <footer>
+        <p>Footer: 2024 Site recapitulare. Cojocariu Ana-Maria_1305A ©</p>
+    </footer>
+
+</body>
+</html>

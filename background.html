@@ -1,0 +1,110 @@
+<html>
+<body>
+
+    <head>
+        <!-- Metadate si titlu -->
+        <meta name="description" content="Background" />
+        <title>Background</title>
+        <!-- Legatura catre fisierul CSS extern -->
+        <link rel="stylesheet" type="text/css" href="cssfile.css" />
+
+        <!-- Stiluri interne definite in pagina -->
+        <style type="text/css">
+            /* Stilizare tabel */
+            table {
+                width: 1400px;
+                height: 700px;
+            }
+
+            /* Stilizare celule tabel */
+            td {
+                border: 1px solid #000;
+                background-color: #fff;
+                text-align: center;
+            }
+
+            /* Stil pentru celulele fara background */
+            .no-background {
+                text-align: center;
+                font-size: 10px;
+            }
+
+            /* Stil pentru celulele cu background colorat */
+            .background-color {
+                background-color: rgb(70, 99, 129); /* Culoare RGB */
+            }
+
+            /* Stil pentru celulele cu background transparent */
+            .background-transparent {
+                background-color: transparent;
+            }
+
+            /* Stil pentru celulele cu imagine de background */
+            .background-image {
+                background-image: url('BackgroundA.jpg'); /* URL-ul imaginii de background */
+                background-size: cover;
+                background-position: center;
+            }
+
+            /* Stil pentru celulele cu imagine de background care se repeta pe axa x */
+            .background-repeat-x {
+                background-image: url('BackgroundAA.jpg'); /* URL-ul imaginii de background */
+                background-repeat: repeat-x;
+                background-size: auto;
+                background-position: center;
+            }
+
+            /* Stil pentru celulele cu imagine de background care se repeta pe axa y */
+            .background-repeat-y {
+                background-image: url('BackgroundAA.jpg'); /* URL-ul imaginii de background */
+                background-repeat: repeat-y;
+                background-size: auto;
+                background-position: center;
+            }
+
+            /* Stil pentru fundal care se scroll-eaza */
+            .background-scroll {
+                background-image: url('BackgroundA.jpg'); /* URL-ul imaginii de background */
+                background-size: cover;
+                background-attachment: scroll;
+            }
+
+            /* Stil pentru elementele listelor */
+            li {
+                black list-style-type: square;
+            }
+        </style>
+
+        <!-- Titlul sectiunii -->
+        <h2>Propietati de "Background"</h2>
+
+        <!-- Paragraf explicativ -->
+        <p>Pentru a putea observa propietatile background-urilor, am construit un tabel in care vom exemplifica diferite modalitati de a adauga un background unei pagini.</p>
+
+        <!-- Lista ordonata cu explicatii pentru fiecare celula din tabel -->
+        <ol>
+            <li><b><i>Prima caseta:</i></b> nu contine background.</li>
+            <li><b><i>A doua caseta:</i></b> contine background color.</li>
+            <li><b><i>A treia caseta:</i></b> contine un backgroud transparent.</li>
+            <li><b><i>A patra caseta:</i></b> contine o imagine <i>.JPG</i> de background.</li>
+            <li><b><i>A cincea caseta:</i></b> backgroundul se repeta dupa <i>"x"</i>.</li>
+            <li><b><i>A sasea caseta:</i></b> backgroundul se repeta dupa <i>"y".</i></li>
+        </ol>
+
+        <!-- Tabel pentru exemplificarea diferitelor tipuri de background -->
+        <table>
+            <tr>
+                <!-- Celule tabel cu clasele definite mai sus -->
+                <td class="no-background"></td> <!-- Celula fara background -->
+                <td class="background-color"></td> <!-- Celula cu background colorat -->
+                <td class="background-transparent"></td> <!-- Celula cu background transparent -->
+            </tr>
+            <tr>
+                <td class="background-image"></td> <!-- Celula cu imagine de background -->
+                <td class="background-repeat-x"></td> <!-- Celula cu imagine de background repetata pe axa x -->
+                <td class="background-repeat-y"></td> <!-- Celula cu imagine de background repetata pe axa y -->
+            </tr>
+        </table>
+
+</body>
+</html>

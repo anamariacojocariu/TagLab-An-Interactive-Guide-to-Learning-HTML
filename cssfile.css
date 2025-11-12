@@ -1,0 +1,48 @@
+body{
+	background:url("BackgroundLogin.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	margin:5%;
+	background-size: cover;
+}
+p {
+	color: black;
+	text-align: left;
+	font-family: 'Times New Roman';
+}
+h1 {
+	color: darkblue;
+	text-align: center;
+}
+h2 {
+	color: black;
+	text-align: left;
+}
+h3 {
+	color: darkblue;
+	text-align: left;
+}
+h4 {
+	color: white;
+	text-align: center;
+}
+footer {
+	color: black;
+}
+.btn {
+	width: 20%;
+	padding: 10px;
+	margin: 5px 0;
+	border: none;
+	border-radius: 3px;
+	background-color: midnightblue;
+	color: white;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: blueviolet;
+}
+th{
+	color:white;
+}

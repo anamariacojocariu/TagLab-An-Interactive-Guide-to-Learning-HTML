@@ -1,0 +1,165 @@
+<html>
+<head>
+    <!-- Metadate despre pagina, descriere pentru motoarele de cautare -->
+    <meta name="description" content="Modelul de tip BOX" />
+    <!-- Titlul paginii, afisat in tab-ul browserului -->
+    <title>Box</title>
+    <!-- Legatura catre fisierul CSS pentru stilizare -->
+    <link rel="stylesheet" type="text/css" href="cssfile.css" />
+    <!-- Stilizarea interna a fisierului -->
+    <style>
+ 
+        /* Exemplu clasa pentru stilizare bordura de jos GROSIME CULOARE*/
+            .border {
+            border: 5px solid darkblue; /* Bordura de jos, grosime 8px, culoare albastra */
+        }
+        /* Exemplu clasa pentru stilizarea bordurii ROTUNJITE */
+            .roundborder{
+             border: 5px solid darkblue;
+            border-radius: 5px;
+        }
+        /* Exemplu 2 clasa pentru stilizarea bordurii ROTUNJITE */
+            .roundborder1{
+             border: 5px solid darkblue;
+            border-radius: 10px;
+        }
+
+          /* Exemplu clasa pentru stilizare bordura din dreapta STIL */
+            .rightborder {
+            border-right-style: double dashed; /* Stil bordura */
+            border-right-color: violet;
+            border-right-width: 10px;
+        }
+
+          /* Exemplu clasa pentru stilizare bordura din stanga CULOARE GROSIME */
+            .leftborder{
+            border-left-color: pink;
+            border-left-width: 10px;
+        }
+
+        /* Exemplu clasa pentru stilizare bordura de sus GROSIME */
+            .topborder{
+            border-top-width: 10px;
+        }
+
+        /* Exemplu clasa pentru stilizare MARGINE */ 
+            .margineext{ 
+            border: 5px solid darkblue; /*BORDURA SE SCRIE PRIMA, NU MERGE INVERS!!!*/
+            margin: 25px 25px 25px 25px;
+        }
+
+        /* Exemplu clasa pentru stilizare margine interioara PADDING */
+            .margineint{
+            padding:  10%;
+            border: 5px solid darkblue;   
+        }
+            
+            .att{
+            color: red;
+        }
+
+       /* <!-- ------------------------------------------------------ --> */
+        
+        /* Exemplu clasa pentru stilizarea continutului INALTIME */
+            .continut{
+            border: 5px solid darkblue;
+            padding: 0px;
+            height: 50px;
+        }
+         /* Exemplu clasa pentru stilizarea continutului INALTIME 2 */
+            .continut2{
+            border: 5px solid darkblue;
+            padding: 0px;
+            height: 100px;
+        }
+
+        /* Exemplu clasa pentru stilizarea continutului LATIME */
+            .continut3{
+        border: 5px solid darkblue;
+            padding: 0px;
+            width:20%;
+        }
+
+        /* Exemplu clasa pentru stilizarea continutului LATIME 2 */
+            .continut4{
+            border: 5px solid darkblue;
+            padding: 0px;
+            width: 40px;
+        }
+       
+    </style>
+
+</head>
+
+<body>
+     <!-- Titlul sectiunii -->
+        <h2>Modelul de tip “cutie” al elementelor HTML</h2>
+
+    <!-- Exemplu elemente nestilizate + paragraf descriptiv -->
+    <p> Pentru a observa mai bine cele 4 propietati ale modelului de tip "cutie" vom observa 2 elemente, carora li se vor atribui o clasa.</p>
+    <p> Initial, cele 2 elemente vor arata asa:</p>
+    
+    <h2>Simplu</h2>
+    <div>Element</div>
+    <div>Element</div>
+    <p> Elementele nu au nicio stilizare.</p>
+
+    <!-- Bordura -->
+    <h2>Bordura</h2>
+    <div class = "border">Element</div>
+    <div class = "border">Element</div>
+    <p>Se observa ca cele 2 elemente au o bordura albastra, de 5 pixeli.
+    <!-- Exemplu bordura span -->
+    <br><br>
+    <p>Exemplu bordura la utilizarea <b>"span"</b>-urilor:</p>
+    <span class = "border">Element</span>
+    <span class = "border">Element</span>
+    <P>Bordurile pot fi rotunjite:</P>
+   
+    <div class = "roundborder">Element</div>
+    <br>
+    <div class = "roundborder1">Element</div>
+
+    <!-- Margine exterioara -->
+    <h2>Margine exterioara</h2>
+    <p class="att">Marginea exterioara nu merge daca bordura nu este scrisa in cod deasupra marginii!!!</pclass="att">
+    <div class = "margineext">Element</div>
+    <div class = "margineext">Element</div>
+    <p>Elementele de mai sus au o margine exterioara de 25 px.
+    <!-- Exemplu margine exterioara span -->
+    <p>Exemplu bordura la utilizarea <b>"span"</b>-urilor:</p>
+    <span class = "margineext">Element</span>
+    <span class = "margineext">Element</span>
+
+    <!-- Margine interioara -->
+    <h2> Margine interioara</h2>
+    <div class = "margineint">Element</div>
+    <div class = "margineint">Element</div>
+    <p>Elementele de mai sus au o margine interioara de 10%.
+    
+    <br><br><br><br><br>
+    <!-- Exemplu margine interioara span -->
+    <p> Exemplu margine interioara la utilizarea <b>"span"</b>-urilor:</p>
+    <br><br><br><br><br><br>
+    <br><br><br>
+    <span class = "margineint">Element</span>
+    <span class = "margineint">Element</span>
+    <br><br><br><br><br><br><br><br>
+    <p>Se pot observa cu usurinta diferentele dintre utilizarea unui div si utilizarea unui span: bordura div-urilor se intinde pe toata lungimea paginii, fiind structurat "bloc", iar span-ul "inline".</p>
+
+    <!-- Stilizarea continutului -->
+    <h2>Continutul</h2>
+    <p>Pentru a stiliza continutul/elementul folosind CSS, se utilizeaza 
+        proprietatile <b>height</b> and <b>width</b>.</p>
+
+    <p><b>Inaltimea unui element:</b></p>
+    <div class = "border">Inaltimea acestui text este setata automat.</div>
+    <div class = "continut">Inaltimea acestui text este de 50px.</div>
+    <div class = "continut2">Inaltimea acestui text este de 100px.</div>
+
+    <p><b>Latimea unui element:</b></p>
+    <div class = "border">Latimea acestui text este setata automat.</div>
+    <div class = "continut3">Latimea acestui text este de 50px.</div>
+    <div class = "continut4">Latimea acestui text este de 100px.</div>
+</body>
+</html>
